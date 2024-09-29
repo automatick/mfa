@@ -31,8 +31,9 @@ def str_index(string: str, found: str, size_buf: int = -1) -> int:
     return -1
 
 
-fnd = 'wor'
+fnd = 'yar'
 
-string = "hello world"
+with open("lorem.txt", "r") as f:
+    string = f.read()
 
 print(str_index(string, fnd))
