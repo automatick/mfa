@@ -20,20 +20,6 @@ int nearestDivisor(int number) {
 }
 /*
 def str_index(string: str, found: str, size_buf: int = -1) -> int:
-    length_s: int = len(string)
-    length_f: int = len(found)
-    if size_buf == -1:
-        size_buf = nearest_divisor(length_f)
-    if length_f % size_buf != 0:
-        raise ValueError("length_f must be a multiple of size_buf.")
-    for i in range(length_s - length_f + 1):
-        if string[i:i+size_buf] == found[:size_buf]:
-            for j in range(i, i + length_f, size_buf):
-                if string[j:j+size_buf] != found[j-i:j-i+size_buf]:
-                    break
-            else:
-                return i
-    return -1
 */
 int strIndex(const string &str, const string &found, int sizeBuf = -1) {
   size_t lengthS = str.length();
